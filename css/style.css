@@ -1,12 +1,3 @@
-:root {
-  --color-Grey-light-1: #faf9f9;
-  --color-Grey-light-2: #f4f2f2;
-  --color-Grey-light-3: #f0eeee;
-  --color-Grey-light-4: #ccc;
-  --color-Grey-dark-1: #333;
-  --color-Grey-dark-2: #777;
-  --color-Grey-dark-3: #999; }
-
 * {
   margin: 0;
   padding: 0; }
@@ -35,18 +26,23 @@ body {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .header {
-  background-color: blue;
-  padding: 10px;
+  background-image: url(../img/header-back.jpg);
+  background-size: cover;
+  padding: 20px;
   font-size: 8px;
   color: white;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  grid-row: 1 / span 2;
+  z-index: 1; }
 
 .nav-top {
-  background-color: red;
+  background-color: transparent;
   padding: 10px;
-  font-size: 8px;
+  font-size: 20px;
   color: white;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  grid-row: 1 / 2;
+  z-index: 20; }
 
 .work {
   grid-column: center-start / center-end;
