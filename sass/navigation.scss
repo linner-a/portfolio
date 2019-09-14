@@ -1,10 +1,59 @@
-.nav-top {
-    background-color: transparent;
-    padding: 10px;
-    font-size: 20px;
-    color: white;
-
+.nav {
+    background-color: rgba(#fff, .6);
+    font-family: 'Roboto';
+    font-weight: 300;
     grid-column: full-start / full-end;
     grid-row: 1 / 2;
     z-index: 20;
+    padding-right: 16rem;
+
+    display: grid;
+    grid-template-columns: 21rem 1fr;
+    justify-items: end;
+    align-items: center;
+
+    
+    &__name {
+        font-size: 4rem;
+        font-family: 'Allura';
+        color: $color-primary;
+        
+        font-weight: 300;
+    }
+    
+
+    &__list {
+        list-style: none;
+        display: flex;       
+    }
+
+    &__item {
+        font-size: 1.8rem;
+        line-height: 1.6rem;
+        padding-bottom: -1rem;
+        margin-right: 5rem;
+        border-bottom: none;
+        border-width: .5px;
+        text-align: bottom;
+        backface-visibility: hidden;
+
+
+        &:hover,
+        &:active {
+            border-bottom: solid;
+            border-width: 1.5px;
+            border-color: $color-primary;
+
+        }
+    }
+
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-primary;
+        margin-bottom: -1rem;
+
+    }
 }
