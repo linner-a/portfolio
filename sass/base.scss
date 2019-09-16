@@ -1,13 +1,17 @@
 
   
   // COLOR VARIABLES
-  $color-primary: #446e5c;
+  $color-green-dark: #446e5c;
+  $color-green-medium: #94a69d;
+  $color-green-light: #d5dbd9;
 
   $color-grey-light-1: #f9f7f6;
   $color-grey-light-2: #aaa;
   
   $color-grey-dark-1: #54483A;
   $color-grey-dark-2: #6D5D4B;
+
+  
 
   // FONT VARIABLES
    $font-primary: 'Nunito', sans-serif;
@@ -33,14 +37,19 @@
  body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: var(--color-Grey-dark-2);
+    color: $color-grey-dark-1;
     line-height: 1.6;
     min-height: 100vh;
  }
 
+ ::selection {
+   background-color: $color-green-dark;
+   color: #fff;
+}
+
  .container {
     display: grid;
-    grid-template-rows: 60px calc(100vh - 20px) 40vw repeat(3, min-content);
+    grid-template-rows: 60px calc(100vh - 60px) 40vw repeat(3, min-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
  }

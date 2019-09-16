@@ -1,5 +1,5 @@
 .header {
-    background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/header-back.jpg);
+    background-image: linear-gradient(rgba($color-green-dark, .5), rgba($color-green-dark, .5)), url(../img/header-back.jpg);
     background-size: cover;
     padding: 20px;
     font-size: 8px;
@@ -22,32 +22,34 @@
         padding: 1rem 3rem;
         margin-top: 2rem;
         border: none;
-       // border-width: 1px;
-       // border-color: #fff;
         border-radius: 4%;
         background-color: rgba(#fff, .6);
         font-family: 'Roboto';
         font-weight: 300;
         font-size: 1.2rem;
+        transition: all .2s;
+        cursor:  pointer;
 
         :link,
         :visited {
-        color: $color-primary;
+        color: $color-green-dark;
         font-family: 'Roboto';
-        font-weight: 300;
-        font-size: 1.4rem;
+        font-weight: 400;
+        font-size: 1.5rem;
         text-decoration: none;
         text-transform: uppercase;
 
         }
 
+        &:hover {
+            background-color: rgba(#fff, .8);
+        }
+
         
-       // &:active,
-      //  &:focus {
-      //      transform: translateY(-.2rem);
-     //       box-shadow: 0 .5rem 2rem rgba($color-grey-dark, 0.7);
-      //      outline: none; /* Removes the blue boarded that appears when clicking on a <button> */
-       // }
+        &:active,
+        &:focus {
+            outline: none; /* Removes the blue boarded that appears when clicking on a <button> */
+       }
         
 
         

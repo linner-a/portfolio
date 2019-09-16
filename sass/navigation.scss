@@ -1,5 +1,5 @@
 .nav {
-    background-color: rgba(#fff, .6);
+    background-color: $color-green-light;
     font-family: 'Roboto';
     font-weight: 300;
     grid-column: full-start / full-end;
@@ -16,7 +16,7 @@
     &__name {
         font-size: 4rem;
         font-family: 'Allura';
-        color: $color-primary;
+        color: $color-green-dark;
         
         font-weight: 300;
     }
@@ -42,7 +42,7 @@
         &:active {
             border-bottom: solid;
             border-width: 1.5px;
-            border-color: $color-primary;
+            border-color: $color-green-dark;
 
         }
     }
@@ -52,7 +52,7 @@
     &__link:visited {
         text-decoration: none;
         text-transform: uppercase;
-        color: $color-primary;
+        color: $color-green-dark;
         margin-bottom: -1rem;
 
     }
