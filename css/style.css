@@ -24,7 +24,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 60px calc(100vh - 60px) 40vw repeat(3, min-content);
+  grid-template-rows: 60px calc(100vh - 60px) repeat(4, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .heading-1 {
@@ -129,7 +129,7 @@ body {
   background-color: #d5dbd9;
   font-size: 8px;
   color: white;
-  grid-column: full-start / full-end;
+  grid-column: center-start / center-end;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -137,33 +137,38 @@ body {
     width: 80vw;
     height: 90vh;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-gap: 3rem;
-    align-items: center; }
-  .about__img--1 {
-    width: 63%;
-    object-fit: cover;
-    display: block;
-    grid-column: 4 / span 4;
-    grid-row: 3 / 11; }
-  .about__img--2 {
-    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 4vw);
+    grid-gap: 2.5rem;
+    padding: 2.5rem 4rem; }
+  .about__item--1 {
+    grid-column: 3 / span 3;
+    grid-row: 2 / span 5; }
+  .about__item--2 {
+    grid-column: 6 / span 3;
+    grid-row: 4 / span 4; }
+  .about__img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    display: block;
-    grid-column: 6 / span 2;
-    grid-row: 7 / span 5; }
+    display: block; }
   .about__text {
     display: block;
-    grid-column: 6 / span 3;
-    grid-row: 2 / span 5;
-    background-color: rgba(255, 255, 255, 0.9);
+    grid-column: 6 / span 4;
+    grid-row: 1 / span 3;
+    background-color: rgba(255, 255, 255, 0.8);
     color: #446e5c;
-    font-size: 1.4rem;
-    padding: 2rem 4rem;
-    transform: translateX(2.7rem);
-    border-radius: .7%; }
+    font-size: 1.2rem;
+    border-radius: .7%;
+    padding: 2.5rem 5rem;
+    transform: translateX(-5rem); }
+  .about__quote {
+    padding: 1rem 2rem;
+    background-color: rgba(68, 110, 92, 0.8);
+    grid-column: 3 / span 5;
+    grid-row: 7 / span 2;
+    transform: translateX(-5rem); }
 
 .contact {
   background-color: brown;
