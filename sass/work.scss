@@ -1,7 +1,7 @@
 .work {
-    grid-column: center-start / center-end;
+    grid-column: full-start / full-end;
 
-    background-color: green;
+    background-color: $color-green-dark;
     padding: 10px;
     font-size: 8px;
     color: white;

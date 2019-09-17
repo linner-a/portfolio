@@ -12,7 +12,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #54483A;
   line-height: 1.6;
@@ -24,7 +24,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 60px calc(100vh - 60px) repeat(4, min-content);
+  grid-template-rows: 60px calc(100vh - 60px) min-content 100vh repeat(4, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .heading-1 {
@@ -119,56 +119,36 @@ body {
     margin-bottom: -1rem; }
 
 .work {
-  grid-column: center-start / center-end;
-  background-color: green;
+  grid-column: full-start / full-end;
+  background-color: #446e5c;
   padding: 10px;
   font-size: 8px;
   color: white; }
 
 .about {
   background-color: #d5dbd9;
+  padding: 5rem 15rem;
   font-size: 8px;
   color: white;
-  grid-column: center-start / center-end;
+  grid-column: full-start / full-end;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .about__box {
-    width: 80vw;
-    height: 90vh;
-    display: grid;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, 4vw);
-    grid-gap: 2.5rem;
-    padding: 2.5rem 4rem; }
-  .about__item--1 {
-    grid-column: 3 / span 3;
-    grid-row: 2 / span 5; }
-  .about__item--2 {
-    grid-column: 6 / span 3;
-    grid-row: 4 / span 4; }
+  align-items: center;
+  align-content: center; }
   .about__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block; }
+    width: 20vw;
+    border-radius: 50%;
+    margin-right: 5rem; }
   .about__text {
-    display: block;
-    grid-column: 6 / span 4;
-    grid-row: 1 / span 3;
-    background-color: rgba(255, 255, 255, 0.8);
+    width: 25vw;
     color: #446e5c;
-    font-size: 1.2rem;
-    border-radius: .7%;
-    padding: 2.5rem 5rem;
-    transform: translateX(-5rem); }
-  .about__quote {
-    padding: 1rem 2rem;
-    background-color: rgba(68, 110, 92, 0.8);
-    grid-column: 3 / span 5;
-    grid-row: 7 / span 2;
-    transform: translateX(-5rem); }
+    font-size: 1.2rem; }
+  .about__heading {
+    font-weight: 100;
+    font-family: 'Roboto';
+    font-size: 3.5rem; }
+  .about__paragraph {
+    margin-bottom: 5px; }
 
 .contact {
   background-color: brown;
