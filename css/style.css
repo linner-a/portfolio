@@ -24,7 +24,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 60px calc(100vh - 60px) min-content 100vh repeat(4, min-content);
+  grid-template-rows: 60px calc(100vh - 60px) repeat(4, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .heading-1 {
@@ -123,22 +123,25 @@ body {
   grid-column: full-start / full-end;
   background-image: linear-gradient(rgba(68, 110, 92, 0.5), rgba(68, 110, 92, 0.5)), url(../img/landscape.jpg);
   background-size: cover;
-  font-size: 8px;
   color: white;
-  padding: 25vh 0;
   display: grid;
-  grid-template-columns: 1fr repeat(4, minmax(20vw, 1fr)) 1fr;
-  grid-gap: 3vw; }
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 3rem;
+  padding: 15rem 10rem; }
   .work__item {
-    background-color: rgba(255, 255, 255, 0.6); }
-    .work__item--1 {
-      grid-column: 2 / span 1; }
-    .work__item--2 {
-      grid-column: 3 / span 1; }
-    .work__item--3 {
-      grid-column: 4 / span 1; }
-    .work__item--4 {
-      grid-column: 5 / span 1; }
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #446e5c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem; }
+  .work__icon {
+    width: 4rem;
+    fill: #94a69d;
+    transform: translateY(-4.5rem);
+    margin-bottom: -7rem; }
+    .work__icon--map {
+      width: 5rem; }
 
 .about {
   background-color: #d5dbd9;
