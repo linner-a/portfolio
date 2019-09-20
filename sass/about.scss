@@ -1,6 +1,6 @@
 .about {
-    background-color: $color-green-light;
-    padding: 5rem 15rem;
+    background-color: #fff;
+    padding: 10rem 15rem;
     font-size: 8px;
     color: white;
     grid-column: full-start / full-end;
@@ -25,7 +25,6 @@
 
     &__heading {
         font-weight: 100;
-        font-family: 'Roboto';
         font-size: 3.5rem;
     }
 

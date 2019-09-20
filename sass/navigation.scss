@@ -1,11 +1,14 @@
 .nav {
-    background-color: $color-green-light;
+    background-color: $color-green-medium;
     font-family: 'Roboto';
-    font-weight: 300;
+    font-weight: 100;
     grid-column: full-start / full-end;
     grid-row: 1 / 2;
     z-index: 20;
     padding-right: 16rem;
+    padding-top: .9rem;
+    position: fixed;
+    width: 100vw;
 
     display: grid;
     grid-template-columns: 21rem 1fr;
@@ -16,7 +19,7 @@
     &__name {
         font-size: 4rem;
         font-family: 'Allura';
-        color: $color-green-dark;
+        color: #fff;
         
         font-weight: 300;
     }
@@ -30,19 +33,19 @@
     &__item {
         font-size: 1.8rem;
         line-height: 1.6rem;
-        padding-bottom: -1rem;
+        padding-bottom: .2rem;
         margin-right: 5rem;
-        border-bottom: none;
-        border-width: .5px;
+        border-bottom: solid;
+        border-color: transparent;
+        border-width: 1.5px;
         text-align: bottom;
         backface-visibility: hidden;
 
 
-        &:hover,
-        &:active {
+        &:hover {
             border-bottom: solid;
             border-width: 1.5px;
-            border-color: $color-green-dark;
+            border-color: #fff;
 
         }
     }
@@ -52,7 +55,7 @@
     &__link:visited {
         text-decoration: none;
         text-transform: uppercase;
-        color: $color-green-dark;
+        color: #fff;
         margin-bottom: -1rem;
 
     }

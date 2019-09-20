@@ -24,25 +24,24 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 60px calc(100vh - 60px) repeat(4, min-content);
+  grid-template-rows: 6.5rem calc(100vh - 6.5rem) repeat(4, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .heading-1 {
   font-size: 8rem;
   font-weight: 100;
-  font-family: 'Roboto';
   line-height: 1.3; }
 
 .heading-2 {
   font-size: 2rem;
   font-weight: 100;
-  font-family: 'Roboto';
   line-height: 1.3; }
 
 .header {
   background-image: linear-gradient(rgba(68, 110, 92, 0.5), rgba(68, 110, 92, 0.5)), url(../img/header-back.jpg);
   background-size: cover;
-  padding: 20px;
+  padding: 2rem;
+  padding-top: 10rem;
   font-size: 8px;
   color: #fff;
   grid-column: full-start / full-end;
@@ -60,15 +59,11 @@ body {
     border: none;
     border-radius: 4%;
     background-color: rgba(255, 255, 255, 0.6);
-    font-family: 'Roboto';
-    font-weight: 300;
-    font-size: 1.2rem;
     transition: all .2s;
     cursor: pointer; }
     .header__btn :link,
     .header__btn :visited {
       color: #446e5c;
-      font-family: 'Roboto';
       font-weight: 400;
       font-size: 1.5rem;
       text-decoration: none;
@@ -81,13 +76,16 @@ body {
       /* Removes the blue boarded that appears when clicking on a <button> */ }
 
 .nav {
-  background-color: #d5dbd9;
+  background-color: #94a69d;
   font-family: 'Roboto';
-  font-weight: 300;
+  font-weight: 100;
   grid-column: full-start / full-end;
   grid-row: 1 / 2;
   z-index: 20;
   padding-right: 16rem;
+  padding-top: .9rem;
+  position: fixed;
+  width: 100vw;
   display: grid;
   grid-template-columns: 21rem 1fr;
   justify-items: end;
@@ -95,7 +93,7 @@ body {
   .nav__name {
     font-size: 4rem;
     font-family: 'Allura';
-    color: #446e5c;
+    color: #fff;
     font-weight: 300; }
   .nav__list {
     list-style: none;
@@ -103,20 +101,21 @@ body {
   .nav__item {
     font-size: 1.8rem;
     line-height: 1.6rem;
-    padding-bottom: -1rem;
+    padding-bottom: .2rem;
     margin-right: 5rem;
-    border-bottom: none;
-    border-width: .5px;
+    border-bottom: solid;
+    border-color: transparent;
+    border-width: 1.5px;
     text-align: bottom;
     backface-visibility: hidden; }
-    .nav__item:hover, .nav__item:active {
+    .nav__item:hover {
       border-bottom: solid;
       border-width: 1.5px;
-      border-color: #446e5c; }
+      border-color: #fff; }
   .nav__link:link, .nav__link:visited {
     text-decoration: none;
     text-transform: uppercase;
-    color: #446e5c;
+    color: #fff;
     margin-bottom: -1rem; }
 
 .work {
@@ -126,26 +125,59 @@ body {
   color: white;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 3rem;
-  padding: 15rem 10rem; }
+  grid-gap: 4rem;
+  padding: 10rem 4.5rem;
+  text-align: center; }
   .work__item {
     background-color: rgba(255, 255, 255, 0.8);
     color: #446e5c;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2.5rem; }
+    padding: 2.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    transition: all .2s;
+    position: relative; }
+    .work__item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.35);
+      background-color: rgba(255, 255, 255, 0.9); }
   .work__icon {
-    width: 4rem;
-    fill: #94a69d;
-    transform: translateY(-4.5rem);
-    margin-bottom: -7rem; }
+    width: 3rem;
+    fill: #612106;
+    transform: translateY(-6rem);
+    margin-bottom: -10rem; }
     .work__icon--map {
-      width: 5rem; }
+      width: 4rem; }
+  .work__text {
+    font-size: 1.2rem;
+    margin-bottom: 5rem; }
+  .work__heading {
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 4px; }
+  .work__btn:link, .work__btn:visited {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: #612106;
+    border: none;
+    border-bottom: 1px solid #612106;
+    padding-bottom: 2px;
+    background-color: transparent;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 3rem;
+    transition: all .2s; }
+    .work__btn:link span, .work__btn:visited span {
+      margin-left: 3px;
+      transition: margin-left .2s; }
+  .work__btn:hover span {
+    margin-left: 8px; }
 
 .about {
-  background-color: #d5dbd9;
-  padding: 5rem 15rem;
+  background-color: #fff;
+  padding: 10rem 15rem;
   font-size: 8px;
   color: white;
   grid-column: full-start / full-end;
@@ -164,7 +196,6 @@ body {
     font-size: 1.2rem; }
   .about__heading {
     font-weight: 100;
-    font-family: 'Roboto';
     font-size: 3.5rem; }
   .about__paragraph {
     margin-bottom: 5px; }

@@ -7,8 +7,9 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 3rem;
-    padding: 15rem 10rem;
+    grid-gap: 4rem;
+    padding: 10rem 4.5rem;
+    text-align: center;
     
     
 
@@ -21,21 +22,73 @@
         flex-direction: column;
         align-items: center;
         padding: 2.5rem;
-    }
+        box-shadow: 0 1rem 2rem rgba(black, .3);
+        transition: all .2s;
+        position: relative;
 
-    &__icon {
-        width: 4rem;
-        fill: $color-green-medium;
-        transform: translateY(-4.5rem);
-        margin-bottom: -7rem;
-
-        &--map {
-            width: 5rem;
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 1.5rem 2.5rem rgba(black, .35);
+            background-color: rgba(#fff, .9);
         }
     }
 
-    //&__text {
-        //width: 30rem;
-        //height: 50rem;
-   // }
+    &__icon {
+        width: 3rem;
+        fill: #612106;
+        transform: translateY(-6rem);
+        margin-bottom: -10rem;
+
+        &--map {
+            width: 4rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        margin-bottom: 5rem;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 300;
+        padding-bottom: 4px;
+    }
+
+    &__btn {
+        
+        &:link,
+        &:visited {
+            font-size: 1.6rem;
+            font-weight: 300;
+            text-decoration: none;
+            color: #612106;
+            border: none;
+            border-bottom: 1px solid #612106;
+            padding-bottom: 2px;
+            background-color: transparent;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 3rem;
+            transition: all .2s;
+            
+            & span {
+                margin-left: 3px;
+                transition: margin-left .2s;
+            }
+        }
+
+        &:hover {
+
+            //transform: scale(10%);
+
+            & span {
+                margin-left: 8px;
+            }
+        }
+
+        &:active {
+            
+        }
+    }
 }
