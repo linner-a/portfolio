@@ -82,18 +82,18 @@ body {
   grid-column: full-start / full-end;
   grid-row: 1 / 2;
   z-index: 20;
-  padding-right: 16rem;
-  padding-top: .9rem;
+  padding: .3rem 10rem;
   position: fixed;
   width: 100vw;
   display: grid;
-  grid-template-columns: 21rem 1fr;
+  grid-template-columns: max-content 1fr;
   justify-items: end;
   align-items: center; }
   .nav__name {
     font-size: 4rem;
     font-family: 'Allura';
     color: #fff;
+    justify-self: start;
     font-weight: 300; }
   .nav__list {
     list-style: none;
@@ -102,12 +102,13 @@ body {
     font-size: 1.8rem;
     line-height: 1.6rem;
     padding-bottom: .2rem;
-    margin-right: 5rem;
     border-bottom: solid;
     border-color: transparent;
     border-width: 1.5px;
     text-align: bottom;
     backface-visibility: hidden; }
+    .nav__item:not(:last-child) {
+      margin-right: 5rem; }
     .nav__item:hover {
       border-bottom: solid;
       border-width: 1.5px;
