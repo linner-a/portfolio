@@ -17,7 +17,6 @@
     &__item {
 
         background-color: rgba(#fff, .8);
-        color: $color-green-dark;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -47,6 +46,7 @@
     &__text {
         font-size: 1.2rem;
         margin-bottom: 5rem;
+        color: $color-grey-dark;
     }
 
     &__heading {

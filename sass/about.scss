@@ -2,7 +2,7 @@
     background-color: #fff;
     padding: 10rem 15rem;
     font-size: 8px;
-    color: white;
+    color: $color-grey-dark;
     grid-column: full-start / full-end;
     display: flex;
     justify-content: center;
@@ -18,7 +18,6 @@
 
     &__text {
         width: 25vw;
-        color: $color-green-dark;
         font-size: 1.2rem;
         
     }
