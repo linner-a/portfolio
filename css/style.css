@@ -121,9 +121,8 @@ body {
 
 .work {
   grid-column: full-start / full-end;
-  background-image: linear-gradient(rgba(68, 110, 92, 0.5), rgba(68, 110, 92, 0.5)), url(../img/landscape.jpg);
+  background-image: linear-gradient(rgba(68, 110, 92, 0.7), rgba(68, 110, 92, 0.7)), url(../img/work-back.jpg);
   background-size: cover;
-  color: white;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 4rem;
