@@ -1,7 +1,7 @@
 .work {
     grid-column: full-start / full-end;
 
-    background-image: linear-gradient(rgba($color-green-dark, .7), rgba($color-green-dark, .7)), url(../img/work-back.jpg);
+    background-image: linear-gradient(rgba(#fff, .3), rgba(#fff, .3)), url(../img/leaves.jpg);
     background-size: cover;
 
     display: grid;
@@ -33,7 +33,7 @@
 
     &__icon {
         width: 3rem;
-        fill: #612106;
+        fill: $color-green-medium;
         transform: translateY(-6rem);
         margin-bottom: -10rem;
 
@@ -61,9 +61,9 @@
             font-size: 1.6rem;
             font-weight: 300;
             text-decoration: none;
-            color: #612106;
+            color: #944779;
             border: none;
-            border-bottom: 1px solid #612106;
+            border-bottom: 1px solid #944779;
             padding-bottom: 2px;
             background-color: transparent;
             margin: 0 auto;

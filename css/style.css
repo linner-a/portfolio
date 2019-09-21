@@ -38,7 +38,7 @@ body {
   line-height: 1.3; }
 
 .header {
-  background-image: linear-gradient(rgba(68, 110, 92, 0.5), rgba(68, 110, 92, 0.5)), url(../img/header-back.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(68, 110, 92, 0.7)), url(../img/header-back.jpg);
   background-size: cover;
   padding: 2rem;
   padding-top: 10rem;
@@ -121,7 +121,7 @@ body {
 
 .work {
   grid-column: full-start / full-end;
-  background-image: linear-gradient(rgba(68, 110, 92, 0.7), rgba(68, 110, 92, 0.7)), url(../img/work-back.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/leaves.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -143,7 +143,7 @@ body {
       background-color: rgba(255, 255, 255, 0.9); }
   .work__icon {
     width: 3rem;
-    fill: #612106;
+    fill: #94a69d;
     transform: translateY(-6rem);
     margin-bottom: -10rem; }
     .work__icon--map {
@@ -160,9 +160,9 @@ body {
     font-size: 1.6rem;
     font-weight: 300;
     text-decoration: none;
-    color: #612106;
+    color: #944779;
     border: none;
-    border-bottom: 1px solid #612106;
+    border-bottom: 1px solid #944779;
     padding-bottom: 2px;
     background-color: transparent;
     margin: 0 auto;
