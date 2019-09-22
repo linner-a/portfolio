@@ -220,7 +220,8 @@ body {
   .contact__icon {
     width: 9rem;
     padding: 2rem;
-    margin: -5rem 0;
+    margin-top: -4rem;
+    margin-bottom: -6rem;
     fill: #94a69d;
     transition: fill .2s; }
     .contact__icon:hover {
