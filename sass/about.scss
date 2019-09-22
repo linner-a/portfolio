@@ -9,16 +9,39 @@
     align-items: center;
     align-content: center;
 
+    @media only screen and (max-width: $bp-large) {
+        padding: 10rem 10rem;
+     }
+
     &__img {
         width: 20vw;
         border-radius: 50%;
         margin-right: 5rem;
         box-shadow: 0 1rem 2rem rgba(black, .3);
+
+        @media only screen and (max-width: $bp-largest) {
+            width: 25vw;
+         }
+
+         @media only screen and (max-width: $bp-large) {
+            width: 30vw;
+         }
     }
 
     &__text {
         width: 25vw;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+
+        @media only screen and (max-width: $bp-largest) {
+            font-weight: 400;
+         }
+
+         @media only screen and (max-width: $bp-large) {
+            font-weight: 400;
+            width: 30vw;
+         }
+        
         
     }
 

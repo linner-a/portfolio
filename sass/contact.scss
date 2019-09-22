@@ -22,6 +22,11 @@
 
     &__paragraph {
         font-size: 1.4rem;
+        font-weight: 300;
+
+        @media only screen and (max-width: $bp-largest) {
+            font-weight: 400;
+         }
     }
 
     &__channels {
@@ -35,6 +40,11 @@
         margin-bottom: -6rem;
         fill: $color-green-medium;
         transition: fill .2s;
+
+        @media only screen and (max-width: $bp-largest) {
+            margin-top: -6rem;
+            margin-bottom: -8rem;
+         }
 
         &:hover {
             fill: rgba(#944779, .7);

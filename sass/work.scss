@@ -9,6 +9,23 @@
     grid-gap: 4rem;
     padding: 10rem 4.5rem;
     text-align: center;
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-gap: 3rem;
+        padding: 10rem 3rem;
+     }
+
+     @media only screen and (max-width: $bp-middle) {
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-gap: 4rem;
+        padding: 10rem 4.5rem;
+     }
+
+     @media only screen and (max-width: $bp-little) {
+        grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+        grid-gap: 4rem;
+        padding: 10rem 5.5rem;
+     }
     
     
 
@@ -37,19 +54,32 @@
         transform: translateY(-6rem);
         margin-bottom: -10rem;
 
+        @media only screen and (max-width: $bp-largest) {
+            width: 4rem;
+         }
+
         &--map {
             width: 4rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                width: 5rem;
+             }
         }
     }
 
     &__text {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        font-weight: 300;
         margin-bottom: 5rem;
         color: $color-grey-dark;
+
+        @media only screen and (max-width: $bp-largest) {
+            font-weight: 400;
+         }
     }
 
     &__heading {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: 300;
         padding-bottom: 4px;
     }

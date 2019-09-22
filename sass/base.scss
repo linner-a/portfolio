@@ -5,18 +5,15 @@
   $color-green-medium: #94a69d;
   $color-green-light: #d5dbd9;
 
-  $color-grey-light-1: #f9f7f6;
-  $color-grey-light-2: #aaa;
-  
-  $color-grey-dark-1: #54483A;
   $color-grey-dark: #212121;
 
-  
-
-  // FONT VARIABLES
-   $font-primary: 'Nunito', sans-serif;
-   $font-display: 'Josefin Sans', sans-serif;
  
+  // RESPONSIVE BREAKPOINTS
+   $bp-largest: 75em; // 1200px
+   $bp-large: 62.5em; // 1000px
+   $bp-middle: 58.125em; // 930px
+   $bp-little: 46.875‬em; // 750px
+   $bp-extrasmall: 37.5em; // 600px
   
  * {
     margin: 0;
@@ -32,12 +29,16 @@
  html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px
+
+      @media only screen and (max-width: $bp-largest) {
+         font-size: 50%; // 1rem is 8px 
+      }
  }
   
  body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: $color-grey-dark-1;
+    color: $color-grey-dark;
     line-height: 1.6;
     min-height: 100vh;
  }
