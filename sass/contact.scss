@@ -1,8 +1,58 @@
 .contact {
-    background-color: $color-green-medium;
-    padding: 10px;
-    font-size: 8px;
-    color: white;
-
+    background-color: #fff;
+    padding: 10rem 15rem;
+    font-size: 2rem;
+    color: $color-grey-dark;
     grid-column: full-start / full-end;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__text {
+
+    }
+
+    &__heading {
+        font-size: 4rem;
+        font-weight: 100;
+        margin-bottom: 1rem;
+    }
+
+    &__paragraph {
+        font-size: 1.4rem;
+    }
+
+    &__channels {
+        display: flex;
+    }
+
+    &__icon {
+        width: 9rem;
+        padding: 2rem;
+        margin: -5rem 0;
+        fill: $color-green-medium;
+        transition: fill .2s;
+
+        &:hover {
+            fill: rgba(#944779, .7);
+            animation: pulse 1s infinite;
+        }
+    }
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

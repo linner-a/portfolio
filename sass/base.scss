@@ -43,13 +43,13 @@
  }
 
  ::selection {
-   background-color: $color-green-dark;
+   background-color: $color-green-medium;
    color: #fff;
 }
 
  .container {
     display: grid;
-    grid-template-rows: 6.5rem calc(100vh - 6.5rem) repeat(4, min-content);
+    grid-template-rows: 6.5rem calc(100vh - 6.5rem) repeat(3, min-content) 4.5rem;
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
  }

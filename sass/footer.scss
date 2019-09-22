@@ -1,8 +1,30 @@
 .footer {
     background-color: $color-green-medium;
     padding: 10px;
-    font-size: 8px;
-    color: white;
-
     grid-column: full-start / full-end;
+
+    display: flex;
+    justify-content: center;
+
+    &__text{
+        font-size: 1.8rem;
+        color: #fff;
+        font-weight: 300;
+
+    }
+
+    &__link {
+        transition: color .2s;
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-grey-dark;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
 }
