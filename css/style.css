@@ -42,7 +42,6 @@ body {
   background-size: cover;
   padding: 2rem;
   padding-top: 10rem;
-  font-size: 8px;
   color: #fff;
   grid-column: full-start / full-end;
   grid-row: 1 / span 2;
@@ -50,11 +49,39 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  /* &__btn {
+        
+        &:link,
+        &:visited {
+            font-size: 2rem;
+            font-weight: 100;
+            text-decoration: none;
+            color: #fff;
+            border: none;
+            border-bottom: 1px solid #fff;
+            padding-bottom: .8px;
+            background-color: transparent;
+            margin-top: 2rem;
+            transition: all .2s;
+            
+            & span {
+                margin-left: 3px;
+                transition: margin-left .2s;
+            }
+        }
+
+        &:hover {
+
+            & span {
+                margin-left: 8px;
+            }
+        }
+    } */ }
   .header__text {
     text-align: center; }
   .header__btn {
-    padding: 1rem 3rem;
+    padding: .7rem 2.3rem;
     margin-top: 2rem;
     border: none;
     border-radius: 4%;
@@ -63,17 +90,18 @@ body {
     cursor: pointer; }
     .header__btn :link,
     .header__btn :visited {
-      color: #446e5c;
-      font-weight: 400;
-      font-size: 1.5rem;
+      color: #212121;
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 1.8rem;
       text-decoration: none;
       text-transform: uppercase; }
     .header__btn:hover {
       background-color: rgba(255, 255, 255, 0.8);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+      color: #212121; }
     .header__btn:active, .header__btn:focus {
-      outline: none;
-      /* Removes the blue boarded that appears when clicking on a <button> */ }
+      outline: none; }
 
 .nav {
   background-color: #94a69d;
@@ -104,14 +132,14 @@ body {
     padding-bottom: .2rem;
     border-bottom: solid;
     border-color: transparent;
-    border-width: 1.5px;
+    border-width: 1.2px;
     text-align: bottom;
     backface-visibility: hidden; }
     .nav__item:not(:last-child) {
       margin-right: 5rem; }
     .nav__item:hover {
       border-bottom: solid;
-      border-width: 1.5px;
+      border-width: 1.2px;
       border-color: #fff; }
   .nav__link:link, .nav__link:visited {
     text-decoration: none;
