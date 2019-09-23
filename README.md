@@ -1,2 +1,4 @@
 # portfolio
-Personal portfolio website - in progress
+My personal portfolio website
+
+https://linner-a.github.io/portfolio/
