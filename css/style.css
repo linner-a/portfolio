@@ -42,7 +42,7 @@ body {
       font-size: 6rem; } }
   @media only screen and (max-width: 28.125em) {
     .heading-1 {
-      font-size: 4.5rem; } }
+      font-size: 5rem; } }
 
 .heading-2 {
   font-size: 2rem;
@@ -51,9 +51,6 @@ body {
   @media only screen and (max-width: 37.5em) {
     .heading-2 {
       font-size: 1.8rem; } }
-  @media only screen and (max-width: 28.125em) {
-    .heading-2 {
-      font-size: 1.6rem; } }
 
 .header {
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(68, 110, 92, 0.8)), url(../img/header-back.jpg);
@@ -154,7 +151,7 @@ body {
     list-style: none;
     display: flex; }
   .nav__item {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.6rem;
     padding-bottom: .2rem;
     border-bottom: solid;
@@ -164,10 +161,7 @@ body {
     backface-visibility: hidden; }
     @media only screen and (max-width: 75em) {
       .nav__item {
-        font-size: 2rem; } }
-    @media only screen and (max-width: 28.125em) {
-      .nav__item {
-        font-size: 1.7rem; } }
+        font-size: 2.2rem; } }
     .nav__item:not(:last-child) {
       margin-right: 5rem; }
       @media only screen and (max-width: 43.75em) {
@@ -220,10 +214,17 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
     transition: all .2s;
     position: relative; }
+    @media only screen and (max-width: 43.75em) {
+      .work__item {
+        background-color: rgba(255, 255, 255, 0.9); } }
     .work__item:hover {
       transform: scale(1.05);
       box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.35);
       background-color: rgba(255, 255, 255, 0.9); }
+      @media only screen and (max-width: 43.75em) {
+        .work__item:hover {
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+          transform: scale(1); } }
   .work__icon {
     width: 3rem;
     fill: #94a69d;
@@ -238,7 +239,7 @@ body {
         .work__icon--map {
           width: 5rem; } }
   .work__text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 300;
     margin-bottom: 5rem;
     color: #212121; }
@@ -250,7 +251,7 @@ body {
     font-weight: 300;
     padding-bottom: 4px; }
   .work__btn:link, .work__btn:visited {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 300;
     text-decoration: none;
     color: #944779;
@@ -303,7 +304,7 @@ body {
         margin-bottom: 4rem; } }
   .about__text {
     width: 25vw;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 300; }
     @media only screen and (max-width: 75em) {
       .about__text {
@@ -342,7 +343,7 @@ body {
       .contact__heading {
         font-size: 3rem; } }
   .contact__paragraph {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 300; }
     @media only screen and (max-width: 75em) {
       .contact__paragraph {

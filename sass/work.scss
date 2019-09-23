@@ -42,10 +42,20 @@
         transition: all .2s;
         position: relative;
 
+        @media only screen and (max-width: $bp-small) {
+            background-color: rgba(#fff, .9);
+         }
+
+
         &:hover {
             transform: scale(1.05);
             box-shadow: 0 1.5rem 2.5rem rgba(black, .35);
             background-color: rgba(#fff, .9);
+
+            @media only screen and (max-width: $bp-small) {
+                box-shadow: 0 1rem 2rem rgba(black, .3);
+                transform: scale(1);
+             }
         }
     }
 
@@ -69,7 +79,7 @@
     }
 
     &__text {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 300;
         margin-bottom: 5rem;
         color: $color-grey-dark;
@@ -89,7 +99,7 @@
         
         &:link,
         &:visited {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             font-weight: 300;
             text-decoration: none;
             color: #944779;
