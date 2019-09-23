@@ -10,6 +10,10 @@
     align-items: center;
     text-align: center;
 
+    @media only screen and (max-width: $bp-small) {
+        padding: 4rem 3rem;
+     }
+
     &__text {
 
     }
@@ -18,6 +22,10 @@
         font-size: 4rem;
         font-weight: 100;
         margin-bottom: 1rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 3rem;
+         }
     }
 
     &__paragraph {

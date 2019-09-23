@@ -13,6 +13,8 @@
    $bp-large: 62.5em; // 1000px
    $bp-middle: 58.125em; // 930px
    $bp-small: 43.75em; // 700px
+   $bp-xtrasmall: 37.5em; //600px
+   $bp-smallest: 28.125em; // 450px
   
  * {
     margin: 0;
@@ -51,6 +53,10 @@
     display: grid;
     grid-template-rows: 6.5rem calc(100vh - 6.5rem) repeat(3, min-content) 4.5rem;
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    @media only screen and (max-width: $bp-smallest) {
+      grid-template-rows: 4rem calc(100vh - 4rem) repeat(3, min-content) 4.5rem;
+   }
 
  }
  
