@@ -20,15 +20,7 @@
         grid-gap: 4rem;
         padding: 10rem 4.5rem;
      }
-
-     @media only screen and (max-width: $bp-little) {
-        grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
-        grid-gap: 4rem;
-        padding: 10rem 5.5rem;
-     }
     
-    
-
 
     &__item {
 

@@ -7,10 +7,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
 
     @media only screen and (max-width: $bp-large) {
         padding: 10rem 10rem;
+     }
+
+     @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        text-align: center;
+        padding: 5rem 10rem;
+
      }
 
     &__img {
@@ -26,6 +32,13 @@
          @media only screen and (max-width: $bp-large) {
             width: 30vw;
          }
+
+         @media only screen and (max-width: $bp-small) {
+            width: 50vw;
+            margin-right: 0;
+            margin-bottom: 3rem;
+            
+         }
     }
 
     &__text {
@@ -40,6 +53,11 @@
          @media only screen and (max-width: $bp-large) {
             font-weight: 400;
             width: 30vw;
+         }
+
+         @media only screen and (max-width: $bp-small) {
+            width: 80vw;
+            
          }
         
         
