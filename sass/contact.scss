@@ -11,12 +11,8 @@
     text-align: center;
 
     @media only screen and (max-width: $bp-small) {
-        padding: 4rem 3rem;
+        padding: 7rem 3rem;
      }
-
-    &__text {
-
-    }
 
     &__heading {
         font-size: 4rem;
@@ -54,16 +50,13 @@
             margin-bottom: -8rem;
          }
 
-         @media only screen and (max-width: $bp-smallest) {
-            transition: none;
-         }
-
         &:hover {
             fill: rgba(#944779, .7);
             animation: pulse 1s infinite;
 
             @media only screen and (max-width: $bp-smallest) {
                 animation: none;
+                fill: $color-green-medium;
              }
         }
     }

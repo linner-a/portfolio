@@ -208,7 +208,7 @@ body {
   @media only screen and (max-width: 28.125em) {
     .work {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-      padding: 5rem 5rem; } }
+      padding: 8rem 5rem; } }
   .work__item {
     background-color: rgba(255, 255, 255, 0.8);
     display: flex;
@@ -289,7 +289,7 @@ body {
     .about {
       flex-direction: column;
       text-align: center;
-      padding: 5rem 10rem; } }
+      padding: 8rem 10rem; } }
   .about__img {
     width: 20vw;
     border-radius: 50%;
@@ -338,7 +338,7 @@ body {
   text-align: center; }
   @media only screen and (max-width: 43.75em) {
     .contact {
-      padding: 4rem 3rem; } }
+      padding: 7rem 3rem; } }
   .contact__heading {
     font-size: 4rem;
     font-weight: 100;
@@ -365,15 +365,13 @@ body {
       .contact__icon {
         margin-top: -6rem;
         margin-bottom: -8rem; } }
-    @media only screen and (max-width: 28.125em) {
-      .contact__icon {
-        transition: none; } }
     .contact__icon:hover {
       fill: rgba(148, 71, 121, 0.7);
       animation: pulse 1s infinite; }
       @media only screen and (max-width: 28.125em) {
         .contact__icon:hover {
-          animation: none; } }
+          animation: none;
+          fill: #94a69d; } }
 
 @keyframes pulse {
   0% {
