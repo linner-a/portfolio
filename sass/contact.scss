@@ -54,9 +54,17 @@
             margin-bottom: -8rem;
          }
 
+         @media only screen and (max-width: $bp-smallest) {
+            transition: none;
+         }
+
         &:hover {
             fill: rgba(#944779, .7);
             animation: pulse 1s infinite;
+
+            @media only screen and (max-width: $bp-smallest) {
+                animation: none;
+             }
         }
     }
 }
