@@ -5,7 +5,7 @@
     grid-column: full-start / full-end;
     grid-row: 1 / 2;
     z-index: 20;
-    padding: .3rem 10rem;
+    padding: 0rem 10rem;
     position: fixed;
     width: 100vw;
 
@@ -15,7 +15,7 @@
     align-items: center;
 
     @media only screen and (max-width: $bp-small) {
-        padding: .2rem 5rem;
+        padding: 0rem 5rem;
      }
 
      @media only screen and (max-width: $bp-smallest) {
@@ -39,7 +39,8 @@
 
     &__list {
         list-style: none;
-        display: flex;       
+        display: flex;
+        margin-top: .5rem;    
     }
 
     &__item {
